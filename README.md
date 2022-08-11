@@ -28,7 +28,7 @@ This is a simple React + Vite + Typescript + Tailwind stack. Hot-module-reload i
 
 ## Safe amount input
 
-Refer to `amountInput.tsx` if amount input is needed. It makes sure thatthe string with the amount value is pure (see `useAmount.ts` as well). Additionally `bignumber.js` should be used wherever any amount is being handled.
+Refer to `amountInput.tsx` if amount input is needed. It makes sure that the string with the amount value is pure (see `useAmount.ts` as well). Additionally `bignumber.js` should be used wherever any amount is being handled.
 
 ## Fit for production?
 - For this to be production-ready, lots of pieces are missing. For example, a testing framework should be setup and put in the CI/CD pipeline.
