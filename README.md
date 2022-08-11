@@ -19,10 +19,6 @@ npm i; npm run lint; npm run format
 ```
 npm run purge 
 ```
-## Deploying 
-
-Every push to `main` and `develop` will trigger `production.yml` and `staging.yml` respectively. Ideally, to be production-ready, it should be on every pull request. 
-
 ## Precommit
 
 Husky will run `npx lint-staged` before every commit, triggering eslint to run both linter and prettier on staged files. The commit itself will only be allowed if all issues are solved. This is required to keep the entire codebase uniform (e.g.: code style).
@@ -35,7 +31,7 @@ This is a simple React + Vite + Typescript + Tailwind stack. Hot-module-reload i
 Refer to `amountInput.tsx` if amount input is needed. It makes sure the string value containing the amount is pure (see `useAmount.ts` as well).
 
 ## Fit for production?
-- For this to be production-ready, lots of pieces are missing. For example, a testing framework should be setup and put it in `staging.yml` and `prodution.yml` as part of the CI/CD pipeline.
+- For this to be production-ready, lots of pieces are missing. For example, a testing framework should be setup and put in the CI/CD pipeline.
 - Netlify CLI is kinda slow and annoying.
 - At this point, [Next.js](https://nextjs.org/) is so mature and validated, that the question should be *why NOT use it?* So I would naturally argue to in favor of using it.
 - Not optimized for mobile (input html element is specially full of gotchas when on mobile).
