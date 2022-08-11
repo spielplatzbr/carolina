@@ -1,0 +1,11 @@
+node_modules
+package-lock.json
+.DS_Store
+dist
+npm-debug.log*
+.vscode/*
+!.vscode/extensions.json
+.DS_Store 
+
+# Local Netlify folder
+.netlify
